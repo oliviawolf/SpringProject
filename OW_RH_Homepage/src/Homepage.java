@@ -1,6 +1,10 @@
 
 public class Homepage {
 
+    
+    public static void outputHeader() {}
+    
+    
     public static void main(String[] args) {
         //Ask user for output file name
     	
@@ -18,8 +22,6 @@ public class Homepage {
     	
     	System.out.println("Olivia is dope.");
     	System.out.println("I can't think of anything clever to add :/");
-    	
-    	//Test3
     }
 
 }
