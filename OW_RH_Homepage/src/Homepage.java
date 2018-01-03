@@ -8,7 +8,7 @@ public class Homepage extends htmltemplate {
     public static void main(String[] args) {
         //Ask user for output file name
         SimpleWriter out = new SimpleWriter1L(),
-                file = new SimpleWriter1L("index.html");
+                file = new SimpleWriter1L("WebContent/index.html");
         SimpleReader in = new SimpleReader1L();
         //out.println("File name: ");
 
