@@ -1,5 +1,5 @@
 
-public class Homepage {
+public class Homepage extends htmltemplate {
 
     
     public static void outputHeader() {}
