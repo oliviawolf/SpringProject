@@ -16,18 +16,20 @@ public class Homepage extends htmltemplate {
         //String fileName = in.nextLine();
 
         //Output title and header to file. Ask user for site name
+        htmltemplate.outputHeader("test", file);
 
         //Upload background image (user inputed?)
 
         //Create tabs, maybe embedded within a colored/designed band. Link other HTML pages to tabs. Later: prompt user for design preferences
 
         //Body
+        file.println("<body><p>Olivia is dope</p>");
 
         //Footer
+        htmltemplate.outputFooter(file);
 
         //Close file
-
-        System.out.println("I can't think of anything clever to add :/");
+        file.close();
     }
 
 }
