@@ -21,6 +21,5 @@ public class htmltemplate {
 
     //different body methods
     public static void main(String[] args) {
-
     }
 }
