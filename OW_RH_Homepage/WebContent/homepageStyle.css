@@ -3,3 +3,21 @@ p{
 	font-family: 'Roboto Mono', monospace;
 	background-color: #BF3F7F;
 }
+
+body{
+	background-color: #3F3FBF;
+	color: white;
+	border: 3 solid black;
+	text-align: center;
+	padding: 20 0 20 0;
+}
+html{
+	background-color: #59BF3F;
+	padding:10 40 10 40
+}
+
+h2{
+	color:white;
+	font-family: 'Fjalla One', sans-serif;
+	
+}
