@@ -3,7 +3,7 @@ import components.simplereader.SimpleReader1L;
 import components.simplewriter.SimpleWriter;
 import components.simplewriter.SimpleWriter1L;
 
-public class Homepage extends htmltemplate {
+public class Homepage extends rani {
 
     public static void main(String[] args) {
         //Ask user for output file name
@@ -36,29 +36,9 @@ public class Homepage extends htmltemplate {
         file.println("<hr>");
         file.println("<h2> Welcome to our page! </h2>");
 
-        SimpleWriter olivia = new SimpleWriter1L("WebContent/olivia.html");
-        file.print("Click on this ");
-        file.print("<a href=\"olivia.html\">link </a>");
-        file.println("for a surprise :)");
-
         //code for olivias page
 
-        htmltemplate.outputHeader("Surprise!", olivia);
-
-        //include css code
-        olivia.println(
-                "<link href=\"homepageStyle.css\" rel=\"stylesheet\" type=\"text/css\"></link>");
-
-        olivia.println("<body>");
-        olivia.println("<h1> Olivia's Page! </h1>");
-        olivia.println("<ul>");
-        htmltemplate.createTabs("index.html", "Home", olivia, false);
-        htmltemplate.createTabs("olivia.html", "Olivia's shit", olivia, true);
-        htmltemplate.createTabs("rani.html", "Rani's shit", olivia, false);
-        olivia.println("</ul>");
-
-        olivia.println("<img src=\"funny pic.jpg\"><img>");
-        htmltemplate.outputFooter(olivia);
+        oliviaPage();
 
         //code for rani's page
 
