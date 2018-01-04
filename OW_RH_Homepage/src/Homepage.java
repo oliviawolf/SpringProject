@@ -34,7 +34,7 @@ public class Homepage extends rani {
         file.println("</ul>");
 
         file.println("<hr>");
-        file.println("<h2> Welcome to our page! </h2>");
+        file.println("<h2> Welcome to our site! </h2>");
 
         //code for olivias page
 
@@ -62,7 +62,6 @@ public class Homepage extends rani {
         //file.println(
         //       "<link href=\"homepageStyle.css\" rel=\"stylesheet\" type=\"text/css\"></link>");
         //Body
-        file.println("<body><p>Olivia is dope</p>");
 
         //Footer
         htmltemplate.outputFooter(file);

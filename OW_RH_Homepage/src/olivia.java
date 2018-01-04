@@ -8,11 +8,11 @@ public class olivia extends htmltemplate {
 
         //code for olivias page
 
-        htmltemplate.outputHeader("Surprise!", olivia);
+        outputHeader("Olivia's page", olivia);
 
         //include css code
         olivia.println(
-                "<link href=\"homepageStyle.css\" rel=\"stylesheet\" type=\"text/css\"></link>");
+                "<link href=\"olivia_style.css\" rel=\"stylesheet\" type=\"text/css\"></link>");
 
         olivia.println("<body>");
         olivia.println("<h1> Olivia's Page! </h1>");
@@ -22,7 +22,7 @@ public class olivia extends htmltemplate {
         htmltemplate.createTabs("rani.html", "Rani's shit", olivia, false);
         olivia.println("</ul>");
 
-        olivia.println("<img src=\"funny pic.jpg\"><img>");
+        // olivia.println("<img src=\"funny pic.jpg\"><img>");
         htmltemplate.outputFooter(olivia);
 
     }
