@@ -30,9 +30,14 @@ public class htmltemplate {
      * @requires fileName is in the format "name.html"
      */
     public static void createTabs(String fileName, String tabTitle,
-            SimpleWriter file) {
-        file.println("<li class=\"active\"><a href=\"" + fileName + ">"
-                + tabTitle + "</a></li>\r\n");
+            SimpleWriter file, boolean active) {
+        if (!active) {
+            file.println("<li><a href=\"" + fileName + "\">" + tabTitle
+                    + "</a></li>\r\n");
+        } else {
+            file.println("<li><a class=\"active\" href=\"" + fileName + "\">"
+                    + tabTitle + "</a></li>\r\n");
+        }
     }
 
     //different body methods
