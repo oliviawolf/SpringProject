@@ -62,7 +62,7 @@ public class Homepage extends htmltemplate {
 
         //code for rani's page
 
-        SimpleWriter rani = new SimpleWriter1L("rani.html");
+        SimpleWriter rani = new SimpleWriter1L("WebContent/rani.html");
         htmltemplate.outputHeader("Rani", rani);
 
         rani.println("<body>");
