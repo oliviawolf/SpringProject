@@ -19,6 +19,22 @@ public class htmltemplate {
         out.println("</html>");
     }
 
+    /**
+     *
+     * @param fileName
+     *            Name of file being linked to
+     * @param tabTitle
+     *            Title of tab
+     * @param file
+     *            File being outputed to
+     * @requires fileName is in the format "name.html"
+     */
+    public static void createTabs(String fileName, String tabTitle,
+            SimpleWriter file) {
+        file.println("<li class=\"active\"><a href=\"" + fileName + ">"
+                + tabTitle + "</a></li>\r\n");
+    }
+
     //different body methods
     public static void main(String[] args) {
     }

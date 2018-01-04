@@ -37,7 +37,15 @@ public class Homepage extends htmltemplate {
 
         //Upload background image (user inputed?)
 
-        //Create tabs, maybe embedded within a colored/designed band. Link other HTML pages to tabs. Later: prompt user for design preferences
+        /*
+         * Create tabs, maybe embedded within a colored/designed band. Link
+         * other HTML pages to tabs. Later: prompt user for design preferences
+         */
+        //file.println("<ul class=\"nav nav-pills\">\r\n");
+        //htmltemplate.createTabs("WebContent/index.html", "Home", file);
+        //htmltemplate.createTabs("WebContent/olivia.html", "Olivia's shit", file);
+        //htmltemplate.createTabs("WebContent/rani.html", "Rani's shit", file);
+        //file.println("</ul>");
 
         //add css elements
 
