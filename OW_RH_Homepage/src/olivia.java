@@ -17,9 +17,7 @@ public class olivia extends htmltemplate {
         olivia.println("<body>");
         olivia.println("<h1> Olivia's Page! </h1>");
         olivia.println("<ul>");
-        htmltemplate.createTabs("index.html", "Home", olivia, false);
-        htmltemplate.createTabs("olivia.html", "Olivia's shit", olivia, true);
-        htmltemplate.createTabs("rani.html", "Rani's shit", olivia, false);
+        htmltemplate.createTabs("olivia", olivia);
         olivia.println("</ul>");
 
         // olivia.println("<img src=\"funny pic.jpg\"><img>");

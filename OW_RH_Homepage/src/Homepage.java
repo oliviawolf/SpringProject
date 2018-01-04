@@ -28,9 +28,7 @@ public class Homepage extends rani {
          * other HTML pages to tabs. Later: prompt user for design preferences
          */
         file.println("<ul>");
-        htmltemplate.createTabs("index.html", "Home", file, true);
-        htmltemplate.createTabs("olivia.html", "Olivia's shit", file, false);
-        htmltemplate.createTabs("rani.html", "Rani's shit", file, false);
+        htmltemplate.createTabs("home", file);
         file.println("</ul>");
 
         file.println("<hr>");
@@ -47,10 +45,7 @@ public class Homepage extends rani {
 
         rani.println("<body>");
         rani.println("<h1> Rani's Page! </h1>");
-        rani.println("<ul>");
-        htmltemplate.createTabs("index.html", "Home", rani, false);
-        htmltemplate.createTabs("olivia.html", "Olivia's shit", rani, false);
-        htmltemplate.createTabs("rani.html", "Rani's shit", rani, true);
+        htmltemplate.createTabs("rani", rani);
         rani.println("</ul>");
 
         htmltemplate.outputFooter(rani);
