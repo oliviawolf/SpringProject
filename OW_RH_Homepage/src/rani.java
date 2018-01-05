@@ -10,7 +10,8 @@ import components.simplewriter.SimpleWriter1L;
  */
 public class rani extends olivia {
 
-    public static String rTitle = "Rani Hinnawi", rFileName = "rani.html";
+    public static String rTitle = "Rani Hinnawi",
+            rFileName = "WebContent/rani.html";
     public static SimpleWriter rani = new SimpleWriter1L(rFileName);
 
     /**
@@ -25,5 +26,7 @@ public class rani extends olivia {
         htmltemplate.createTabs("rani", rani);
 
         htmltemplate.outputFooter(rani);
+
+        rani.close();
     }
 }
