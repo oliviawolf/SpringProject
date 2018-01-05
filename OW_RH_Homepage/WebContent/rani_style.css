@@ -8,3 +8,31 @@ margin-left: 15px;
 body{
 	background-color: #3FE4E8;
 }
+
+ul{
+    list-style-type: none;
+    margin:5;
+    padding:5;
+    overflow: hidden;
+    background-color: #808080;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display:block;
+    color:white;
+    text-align: center;
+    padding: 15 18;
+    text-decoration:none;
+}
+
+li a:hover:not(.active){
+    background-color:#000000;
+}
+
+.active{
+    background-color:#4CAF50;
+}

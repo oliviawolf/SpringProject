@@ -19,6 +19,9 @@ public class rani extends olivia {
     public static void raniPage() {
         htmltemplate.outputHeader(rTitle, rani);
 
+        rani.println(
+                "<link href=\"rani_style.css\" rel=\"stylesheet\" type=\"text/css\"></link>");
+
         htmltemplate.createTabs("rani", rani);
 
         htmltemplate.outputFooter(rani);
