@@ -12,18 +12,18 @@ import components.simplewriter.SimpleWriter;
  */
 public class htmltemplate {
 
-    public static String homepageFile = "index.html", oFile = "olivia.html",
-            rFile = "rani.html";
-    public static String[] fileNames = { homepageFile, oFile, rFile };
-    public static String[] siteTitles = { "Olivia & Rani", "Olivia", "Rani" }; //Tentative names
-    public static String[] keys = { "home", "olivia", "rani" };
+    public static String tHome = "Olivia & Rani", tOlivia = "Olivia",
+            tRani = "Rani";
+    public static String fHome = "index.html", fOlivia = "olivia.html",
+            fRani = "rani.html";
 
-    public static final Map<String, String> files = new HashMap<>(),
-            titles = new HashMap<>();
+    public static String[] fileNames = { fHome, fOlivia, fRani };
+    public static String[] siteTitles = { tHome, tOlivia, tRani };
+
+    public static final Map<String, String> files = new HashMap<>();
     static {
-        for (int i = 0; i < keys.length; i++) {
-            files.put(keys[i], fileNames[i]);
-            titles.put(keys[i], siteTitles[i]);
+        for (int i = 0; i < siteTitles.length; i++) {
+            files.put(siteTitles[i], fileNames[i]);
         }
     }
 
@@ -66,15 +66,15 @@ public class htmltemplate {
      */
     public static void createTabs(String user, SimpleWriter file) {
         file.println("<ul>");
-        for (int i = 0; i < keys.length; i++) {
-            boolean active = (keys[i] == user);
+        for (int i = 0; i < siteTitles.length; i++) {
+            boolean active = (siteTitles[i] == user);
 
             if (!active) {
-                file.println("<li><a href=\"" + files.get(keys[i]) + "\">"
-                        + titles.get(keys[i]) + "</a></li>\r\n");
+                file.println("<li><a href=\"" + files.get(siteTitles[i]) + "\">"
+                        + siteTitles[i] + "</a></li>\r\n");
             } else {
                 file.println("<li><a class=\"active\" href=\""
-                        + files.get(keys[i]) + "\">" + titles.get(keys[i])
+                        + files.get(siteTitles[i]) + "\">" + siteTitles[i]
                         + "</a></li>\r\n");
             }
         }
