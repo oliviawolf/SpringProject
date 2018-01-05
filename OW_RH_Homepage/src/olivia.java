@@ -14,15 +14,14 @@ public class olivia extends htmltemplate {
         olivia.println(
                 "<link href=\"olivia_style.css\" rel=\"stylesheet\" type=\"text/css\"></link>");
 
-        olivia.println("<body>");
         olivia.println("<h1> Olivia's Page! </h1>");
-        olivia.println("<ul>");
-        htmltemplate.createTabs("olivia", olivia);
-        olivia.println("</ul>");
+
+        createTabs("olivia", olivia);
 
         // olivia.println("<img src=\"funny pic.jpg\"><img>");
         htmltemplate.outputFooter(olivia);
 
+        olivia.close();
     }
 
     public static void main(String[] args) {
