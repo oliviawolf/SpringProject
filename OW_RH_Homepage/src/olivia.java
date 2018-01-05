@@ -18,6 +18,18 @@ public class olivia extends htmltemplate {
 
         createTabs("olivia", olivia);
 
+        //create a button
+        olivia.println(
+                "<input type=\"button\" value=\"click me\" onclick=\"myFunction()\" />");
+
+        olivia.println(
+                "<input type=\"button\" value=\"NO, click me\" onclick=\"myFunction2()\" />");
+
+        olivia.println("<img id=");
+        //include javascript
+
+        olivia.println("<script src=\"olivia.js\"></script>");
+
         // olivia.println("<img src=\"funny pic.jpg\"><img>");
         htmltemplate.outputFooter(olivia);
 
