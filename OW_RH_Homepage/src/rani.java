@@ -20,18 +20,22 @@ public class rani extends olivia {
      * Method used to create Rani's HTML file
      */
     public static void raniPage() {
+        //Header
         outputHeader(tRani, rani);
 
+        //Import style settings from CSS document
         rani.println(
                 "<link href=\"rani_style.css\" rel=\"stylesheet\" type=\"text/css\"></link>");
 
+        //Display title of page
         rani.println("<h1>" + tRani + "</h1>");
 
+        //Create tabs and a bar below it separating common header from content
         createTabs(tRani, rani);
         rani.println("<hr>");
 
+        //Read out paragraphs from text file
         rani.println("<p>");
-
         while (!raniText1.atEOS()) {
             String line = raniText1.nextLine();
             if (line.equals("") || line.equals(" ")) {
@@ -40,11 +44,14 @@ public class rani extends olivia {
                 rani.println(line);
             }
         }
-
         rani.println("</p>");
 
-        outputFooter(rani);
+        //Create a button for comments
+        createButton("Test", "comments()", rani);
+        rani.println("<script src=\"rani.js\"></script>");
 
+        //Generate closing tags and close the file
+        outputFooter(rani);
         rani.close();
     }
 }
