@@ -19,7 +19,7 @@ public class Homepage extends rani {
                 "<link href=\"homepageStyle.css\" rel=\"stylesheet\" type=\"text/css\"></link>");
 
         //output header
-        file.println("<h1>" + home + "</h1>");
+        file.println("<h1>" + tHome + "</h1>");
 
         /*
          * Create tabs, maybe embedded within a colored/designed band. Link
