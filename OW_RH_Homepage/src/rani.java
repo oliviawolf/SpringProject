@@ -10,17 +10,23 @@ import components.simplewriter.SimpleWriter1L;
  */
 public class rani extends olivia {
 
-    public static String rTitle = "Rani Hinnawi", rFileName = "rani.html";
-    public static SimpleWriter rani = new SimpleWriter1L(rFileName);
+    public static SimpleWriter rani = new SimpleWriter1L("WebContent/" + fRani);
 
     /**
      * Method used to create Rani's HTML file
      */
     public static void raniPage() {
-        htmltemplate.outputHeader(rTitle, rani);
+        htmltemplate.outputHeader(tRani, rani);
 
-        htmltemplate.createTabs("rani", rani);
+        rani.println(
+                "<link href=\"rani_style.css\" rel=\"stylesheet\" type=\"text/css\"></link>");
+
+        rani.println("<h1>" + tRani + "</h1>");
+
+        htmltemplate.createTabs(tRani, rani);
 
         htmltemplate.outputFooter(rani);
+
+        rani.close();
     }
 }

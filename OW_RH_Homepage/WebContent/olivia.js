@@ -9,5 +9,12 @@ function myFunction(){
 }
 
 function myFunction2(){
+	x=document.getElementById('baby');
+	if(x.style.visibility==='hidden'){
+		x.style.visibility='visible';	
+	}
+	else{
+		x.style.visibility='hidden';
+	}
 	
 }

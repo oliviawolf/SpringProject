@@ -8,15 +8,15 @@ public class olivia extends htmltemplate {
 
         //code for olivias page
 
-        outputHeader("Olivia's page", olivia);
+        outputHeader(tOlivia, olivia);
 
         //include css code
         olivia.println(
                 "<link href=\"olivia_style.css\" rel=\"stylesheet\" type=\"text/css\"></link>");
 
-        olivia.println("<h1> Olivia's Page! </h1>");
+        olivia.println("<h1>" + tOlivia + "</h1>");
 
-        createTabs("olivia", olivia);
+        createTabs(tOlivia, olivia);
 
         //create a button
         olivia.println(
@@ -25,7 +25,8 @@ public class olivia extends htmltemplate {
         olivia.println(
                 "<input type=\"button\" value=\"NO, click me\" onclick=\"myFunction2()\" />");
 
-        olivia.println("<img id=");
+        olivia.println(
+                "<img id=\"baby\" src=\"funny pic.jpg\" style=\"visibility:hidden\" width=\"400\" height=\"height\" />");
         //include javascript
 
         olivia.println("<script src=\"olivia.js\"></script>");
