@@ -18,3 +18,11 @@ function myFunction2(){
 	}
 	
 }//
+
+function addImage(){
+	var imageLink = prompt('please enter a link');
+	x=document.getElementById('new');
+	x.setAttribute('src',imageLink);
+	x.style.visibility='visible';
+	
+}
