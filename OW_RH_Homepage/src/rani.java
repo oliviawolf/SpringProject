@@ -23,6 +23,8 @@ public class rani extends olivia {
         rani.println(
                 "<link href=\"rani_style.css\" rel=\"stylesheet\" type=\"text/css\"></link>");
 
+        rani.println("<h1>" + rTitle + "</h1>");
+
         htmltemplate.createTabs("rani", rani);
 
         htmltemplate.outputFooter(rani);
