@@ -1,3 +1,6 @@
+
+
+
 var Button = document.getElementById('Hello There');
 
 Button.onclick = function(){
@@ -25,4 +28,15 @@ function addImage(){
 	x.setAttribute('src',imageLink);
 	x.style.visibility='visible';
 	
+}
+
+function playSong(){
+	var song=document.getElementById('sound');
+
+	song.play();
+}
+
+function pauseSong(){
+	var song=document.getElementById('sound');
+	song.pause();
 }
