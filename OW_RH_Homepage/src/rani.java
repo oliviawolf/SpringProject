@@ -1,6 +1,13 @@
 import components.simplewriter.SimpleWriter;
 import components.simplewriter.SimpleWriter1L;
 
+/**
+ * Creates the rani.html page by using the same header and footer as other tabs
+ * in the homepage but filling in a different body.
+ *
+ * @author Rani Hinnawi
+ *
+ */
 public class rani extends olivia {
 
     public static String rTitle = "Rani Hinnawi", rFileName = "rani.html";

@@ -39,6 +39,7 @@ public class htmltemplate {
         out.println("<head>");
         out.println("<title>" + title + "</title>");
         out.println("</head>");
+        out.println("<body>");
 
     }
 
@@ -64,7 +65,6 @@ public class htmltemplate {
      * @updates file
      */
     public static void createTabs(String user, SimpleWriter file) {
-
         file.println("<ul>");
         for (int i = 0; i < keys.length; i++) {
             boolean active = (keys[i] == user);
