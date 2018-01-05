@@ -17,4 +17,4 @@ function myFunction2(){
 		x.style.visibility='hidden';
 	}
 	
-}
+}//

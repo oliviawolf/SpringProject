@@ -34,7 +34,6 @@ public class olivia extends htmltemplate {
         // olivia.println("<img src=\"funny pic.jpg\"><img>");
         htmltemplate.outputFooter(olivia);
 
-        //
         olivia.close();
     }
 
