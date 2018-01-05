@@ -5,6 +5,17 @@ margin-left: 15px;
 
 }
 
+html{
+    background-color: #59BF3F;
+    padding:10 40 10 40
+}
+
+h2{
+    color:white;
+    font-family: 'Fjalla One', sans-serif;
+    
+}
+
 body{
 	background-color: #3FE4E8;
 }
