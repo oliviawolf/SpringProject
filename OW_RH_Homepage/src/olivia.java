@@ -18,12 +18,13 @@ public class olivia extends htmltemplate {
 
         createTabs(tOlivia, olivia);
 
-        //create a button
-        olivia.println(
-                "<input type=\"button\" value=\"click me\" onclick=\"myFunction()\" />");
+        //create button
 
-        olivia.println(
-                "<input type=\"button\" value=\"NO, click me\" onclick=\"myFunction2()\" />");
+        createButton("click me", "myFunction()", olivia);
+
+        createButton("NO, click me", "myFunction2()", olivia);
+
+        createButton("click to add your own image", "addImage()", olivia);
 
         olivia.println(
                 "<img id=\"baby\" src=\"funny pic.jpg\" style=\"visibility:hidden\" width=\"400\" height=\"height\" />");
@@ -31,12 +32,15 @@ public class olivia extends htmltemplate {
 
         olivia.println("<script src=\"olivia.js\"></script>");
 
+        olivia.println(
+                "<img id=\"new\" src=\"null\" style=\"visibility:hidden\" width=\"400\" height=\"height\" />");
         // olivia.println("<img src=\"funny pic.jpg\"><img>");
         htmltemplate.outputFooter(olivia);
 
         olivia.close();
     }
 
+    //
     public static void main(String[] args) {
 
     }

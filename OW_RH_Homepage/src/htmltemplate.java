@@ -82,6 +82,24 @@ public class htmltemplate {
         file.println("</ul>");
     }
 
+    /**
+     * Creates a button that runs a function specified by String function.
+     *
+     * @param name
+     *            Words to be written on button
+     * @param function
+     *            The function that is run when button is pressed
+     * @param file
+     *            File being outputed to
+     * @updates file
+     */
+    public static void createButton(String name, String function,
+            SimpleWriter file) {
+        file.println("<input type=\"button\" value=\"" + name + "\" onclick=\""
+                + function + "\"/>");
+
+    }
+
     //different body methods
     public static void main(String[] args) {
     }
