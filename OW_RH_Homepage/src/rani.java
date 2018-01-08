@@ -50,6 +50,17 @@ public class rani extends olivia {
         createButton("Test", "comments()", rani);
         rani.println("<script src=\"rani.js\"></script>");
 
+        //Create a form to be emailed to rhinnawi95@gmail.com
+
+        rani.println(
+                "<form action=\"mailto:rhinnawi95@gmail.com\" method=\"get\">\r\n"
+                        + "Subject: <input type=\"text\" name=\"subject\"><br/>\r\n"
+                        + "Comment: <textarea name=\"body\"></textarea><br/>\r\n"
+                        + "<input type=\"submit\" value=\"Send\">\r\n"
+                        + "</form>");
+
+        //Add Java compiler
+
         //Generate closing tags and close the file
         outputFooter(rani);
         rani.close();
