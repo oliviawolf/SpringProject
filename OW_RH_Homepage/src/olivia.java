@@ -21,6 +21,15 @@ public class olivia extends htmltemplate {
         //add a song to page
         olivia.println(
                 "<embed id=\"sound\" src=\"01 - Like A Star.mp3\" autostart=\"false\" width=\"0\" height=\"0\">");
+
+        //create form to enter name
+
+        olivia.println(
+                "<form action=\"/action_page.php\" method=\"get\"> \n First name: <br> \n <input type=\"text\" name=\"firstname\"><br>");
+
+        olivia.println("\n<input type=\"submit\" value=\"Submit\">\n");
+
+        olivia.println("</form>");
         //create button
 
         createButton("click me", "myFunction()", olivia);
