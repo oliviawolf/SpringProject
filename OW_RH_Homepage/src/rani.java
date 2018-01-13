@@ -50,6 +50,8 @@ public class rani extends olivia {
         createButton("Test", "comments()", rani);
         rani.println("<script src=\"rani.js\"></script>");
 
+        //rani.println("<p><a href=\" \">Hello World!</a></p>");
+
         //Create a form to be emailed to rhinnawi95@gmail.com
 
         rani.println(
