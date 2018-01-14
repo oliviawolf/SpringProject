@@ -20,9 +20,8 @@ public class htmltemplate {
             tRani = "Rani";
 
     //Output file names
-    public static String fHome = "WebContent/Homepage/index.html",
-            fOlivia = "WebContent/Olivia/olivia.html",
-            fRani = "WebContent/Rani/rani.html";
+    public static String fHome = "WebContent/index.html",
+            fOlivia = "WebContent/olivia.html", fRani = "WebContent/rani.html";
 
     public static String[] fileNames = { fHome, fOlivia, fRani };
     public static String[] siteTitles = { tHome, tOlivia, tRani };
@@ -36,13 +35,13 @@ public class htmltemplate {
 
     //CSS files
     public static String cHome = "WebContent/Homepage/homepageStyle.css",
-            cOlivia = "WebContent/Homepage/olivia_style.css",
-            cRani = "WebContent/Homepage/rani_style.css";
+            cOlivia = "WebContent/Oliva/olivia_style.css",
+            cRani = "WebContent/Rani/rani_style.css";
 
     //Javascript files
     public static String jHome = "WebContent/Homepage/homepagejs.js",
-            jOlivia = "WebContent/Homepage/olivia.js",
-            jRani = "WebContent/Homepage/rani.js";
+            jOlivia = "WebContent/Olivia/olivia.js",
+            jRani = "WebContent/Rani/rani.js";
 
     //Additional WebContent files
     public static String song1 = "WebContent/Olivia/01 - Like A Star.mp3",
