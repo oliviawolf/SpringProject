@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
+import components.simplereader.SimpleReader;
 import components.simplewriter.SimpleWriter;
 
 /**
@@ -100,7 +101,28 @@ public class htmltemplate {
 
     }
 
-    //different body methods
-    public static void main(String[] args) {
+    /**
+     * Read text from text files and split it into paragraphs. Will update later
+     * to allow for indenting paragraphs, maybe use separator from CSE
+     * lab/project
+     *
+     * @param textFile
+     *            .txt file being uploaded from
+     * @param file
+     *            HTML file being uploaded to
+     * @updates file, textFile
+     * @requires file to be an HTML file
+     */
+    public static void readFromFile(SimpleReader textFile, SimpleWriter file) {
+        file.println("<p>");
+        while (!textFile.atEOS()) {
+            String line = textFile.nextLine();
+            if (line.equals("") || line.equals(" ")) {
+                file.println("</p><p>");
+            } else {
+                file.println(line);
+            }
+        }
+        file.println("</p>");
     }
 }

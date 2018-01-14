@@ -35,31 +35,23 @@ public class rani extends olivia {
         rani.println("<hr>");
 
         //Read out paragraphs from text file
-        rani.println("<p>");
-        while (!raniText1.atEOS()) {
-            String line = raniText1.nextLine();
-            if (line.equals("") || line.equals(" ")) {
-                rani.println("</p><p>");
-            } else {
-                rani.println(line);
-            }
-        }
-        rani.println("</p>");
+        readFromFile(raniText1, rani);
 
         //Create a button for comments
         createButton("Test", "comments()", rani);
         rani.println("<script src=\"rani.js\"></script>");
 
+        //Create link to Java applet
         //rani.println("<p><a href=\" \">Hello World!</a></p>");
 
         //Create a form to be emailed to rhinnawi95@gmail.com
 
-        rani.println(
-                "<form action=\"mailto:rhinnawi95@gmail.com\" method=\"get\">\r\n"
-                        + "Subject: <input type=\"text\" name=\"subject\"><br/>\r\n"
-                        + "Comment: <textarea name=\"body\"></textarea><br/>\r\n"
-                        + "<input type=\"submit\" value=\"Send\">\r\n"
-                        + "</form>");
+        //rani.println(
+        //        "<form action=\"mailto:rhinnawi95@gmail.com\" method=\"get\">\r\n"
+        //                + "Subject: <input type=\"text\" name=\"subject\"><br/>\r\n"
+        //                + "Comment: <textarea name=\"body\"></textarea><br/>\r\n"
+        //                + "<input type=\"submit\" value=\"Send\">\r\n"
+        //                + "</form>");
 
         //Add Java compiler
 

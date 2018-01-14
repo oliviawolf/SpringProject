@@ -1,12 +1,12 @@
 p{
-    color: magenta;
+    color: white;
     margin-left: 15px;
     padding: 0 20 0 20;
 
 }
 
 html{
-    background-color: #59BF3F;
+    background-color: #40892e;
     padding:10 40 10 40
 }
 
@@ -19,7 +19,7 @@ h1{
 }
 
 body{
-	background-color: #3FE4E8;
+	background-color: #408080;
 	border: 3 solid black;
 }
 
@@ -48,5 +48,5 @@ li a:hover:not(.active){
 }
 
 .active{
-    background-color:#4CAF50;
+    background-color:#40892e;
 }
