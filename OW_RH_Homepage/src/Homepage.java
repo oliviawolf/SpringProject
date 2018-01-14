@@ -8,7 +8,7 @@ public class Homepage extends rani {
     public static void main(String[] args) {
         //Ask user for output file name
         SimpleWriter out = new SimpleWriter1L(),
-                file = new SimpleWriter1L("WebContent/" + fHome);
+                file = new SimpleWriter1L(fHome);
         SimpleReader in = new SimpleReader1L();
 
         //Output title and header to file.
@@ -33,7 +33,7 @@ public class Homepage extends rani {
 
         //code for Olivias page
 
-        oliviaPage("WebContent/olivia.html");
+        oliviaPage(fOlivia);
 
         //code for Rani's page
 

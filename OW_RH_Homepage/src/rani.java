@@ -12,9 +12,8 @@ import components.simplewriter.SimpleWriter1L;
  */
 public class rani extends olivia {
 
-    public static SimpleWriter rani = new SimpleWriter1L("WebContent/" + fRani);
-    public static SimpleReader raniText1 = new SimpleReader1L(
-            "WebContent/rani_text1.txt");
+    public static SimpleWriter rani = new SimpleWriter1L(fRani);
+    public static SimpleReader raniText1 = new SimpleReader1L(fRani);
 
     /**
      * Method used to create Rani's HTML file

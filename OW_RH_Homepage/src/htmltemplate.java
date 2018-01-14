@@ -2,7 +2,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import components.simplereader.SimpleReader;
+import components.simplereader.SimpleReader1L;
 import components.simplewriter.SimpleWriter;
+import components.simplewriter.SimpleWriter1L;
 
 /**
  * Pool of HTML template methods used to create different aspects of an HTML
@@ -13,10 +15,14 @@ import components.simplewriter.SimpleWriter;
  */
 public class htmltemplate {
 
+    //Site titles
     public static String tHome = "Olivia & Rani", tOlivia = "Olivia",
             tRani = "Rani";
-    public static String fHome = "index.html", fOlivia = "olivia.html",
-            fRani = "rani.html";
+
+    //Output file names
+    public static String fHome = "WebContent/Homepage/index.html",
+            fOlivia = "WebContent/Olivia/olivia.html",
+            fRani = "WebContent/Rani/rani.html";
 
     public static String[] fileNames = { fHome, fOlivia, fRani };
     public static String[] siteTitles = { tHome, tOlivia, tRani };
@@ -27,6 +33,26 @@ public class htmltemplate {
             files.put(siteTitles[i], fileNames[i]);
         }
     }
+
+    //CSS files
+    public static String cHome = "WebContent/Homepage/homepageStyle.css",
+            cOlivia = "WebContent/Homepage/olivia_style.css",
+            cRani = "WebContent/Homepage/rani_style.css";
+
+    //Javascript files
+    public static String jHome = "WebContent/Homepage/homepagejs.js",
+            jOlivia = "WebContent/Homepage/olivia.js",
+            jRani = "WebContent/Homepage/rani.js";
+
+    //Additional files
+    public static String song1 = "WebContent/Olivia/01 - Like A Star.mp3",
+            audio2 = "WebContent/Olivia/audio2.mp3",
+            audio3 = "WebContent/Olivia/audio3.mp3",
+            funnyPic = "WebContent/Olivia/funny pic.jpg",
+            raniText1File = "WebContent/Rani/rani_text1.txt";
+
+    public static SimpleWriter rani = new SimpleWriter1L(fRani);
+    public static SimpleReader raniText1 = new SimpleReader1L(raniText1File);
 
     /**
      * Outputs opening tags for HTML files

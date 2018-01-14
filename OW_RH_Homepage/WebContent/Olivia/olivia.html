@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Olivia</title>
+</head>
+<body>
+<link href="olivia_style.css" rel="stylesheet" type="text/css"></link>
+<h1>Olivia</h1>
+<div class="date">
+<p id="date"></p>
+</div>
+<ul>
+<li><a href="WebContent/Homepage/index.html">Olivia & Rani</a></li>
+
+<li><a class="active" href="WebContent/Olivia/olivia.html">Olivia</a></li>
+
+<li><a href="WebContent/Rani/rani.html">Rani</a></li>
+
+</ul>
+<hr>
+<embed id="sound" src="01 - Like A Star.mp3" autostart="false" width="0" height="0">
+<div class="tab">
+<button class="tablinks" onclick ="openPage(event,'Buttons')"> Buttons </button>
+<button class="tablinks" onclick ="openPage(event,'Music')"> Music player </button>
+</div>
+<div id="Buttons" class="tabcontent">
+Click any of the buttons below to make some magic happen 
+
+<p></p>
+<input type="button" value="click to update date" onclick="upDate()"/>
+<input type="button" value="click me" onclick="myFunction()"/>
+<input type="button" value="NO, click me" onclick="myFunction2()"/>
+<input type="button" value="click to add your own image" onclick="addImage()"/>
+<p></p>
+<img id="baby" src="funny pic.jpg" style="visibility:hidden" width="400" height="height" />
+<img id="new" src="null" style="visibility:hidden" width="400" height="height" />
+ </div>
+<div id="Music" class="tabcontent">
+<audio controls="controls" id="audio_player">
+<source src="audio2.mp3" type="audio/mpeg" />
+Your browser does not support the audio element. 
+ </audio>
+<p></p>
+<input type="button" value="play a song" onclick="playSong()"/>
+<input type="button" value="pause" onclick="pauseSong()"/>
+<input type="button" value="play this instead" onclick="chooseSong('audio3.mp3')"/>
+</div>
+<form action="/action_page.php" method="get"> 
+ First name: <br> 
+ <input type="text" name="firstname"><br>
+
+<input type="submit" value="Submit">
+
+</form>
+<script src="olivia.js"></script>
+</body>
+</html>
