@@ -44,14 +44,17 @@ public class htmltemplate {
             jOlivia = "WebContent/Homepage/olivia.js",
             jRani = "WebContent/Homepage/rani.js";
 
-    //Additional files
+    //Additional WebContent files
     public static String song1 = "WebContent/Olivia/01 - Like A Star.mp3",
             audio2 = "WebContent/Olivia/audio2.mp3",
             audio3 = "WebContent/Olivia/audio3.mp3",
             funnyPic = "WebContent/Olivia/funny pic.jpg",
             raniText1File = "WebContent/Rani/rani_text1.txt";
 
-    public static SimpleWriter rani = new SimpleWriter1L(fRani);
+    //Webpages, input and output files
+    public static SimpleWriter home = new SimpleWriter1L(fHome),
+            rani = new SimpleWriter1L(fRani),
+            olivia = new SimpleWriter1L(fOlivia);
     public static SimpleReader raniText1 = new SimpleReader1L(raniText1File);
 
     /**

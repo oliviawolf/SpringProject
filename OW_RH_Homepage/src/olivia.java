@@ -1,18 +1,17 @@
 import components.simplewriter.SimpleWriter;
-import components.simplewriter.SimpleWriter1L;
 
 public class olivia extends htmltemplate {
 
-    public static void oliviaPage(String file) {
-        SimpleWriter olivia = new SimpleWriter1L(file);
+    public static void oliviaPage(SimpleWriter olivia) {
+        //SimpleWriter olivia = new SimpleWriter1L(file);
 
         //code for olivias page
 
         outputHeader(tOlivia, olivia);
 
         //include css code
-        olivia.println(
-                "<link href=\"olivia_style.css\" rel=\"stylesheet\" type=\"text/css\"></link>");
+        olivia.println("<link href=\"" + cOlivia
+                + "\" rel=\"stylesheet\" type=\"text/css\"></link>");
 
         olivia.println("<h1>" + tOlivia + "</h1>");
 
@@ -81,7 +80,7 @@ public class olivia extends htmltemplate {
 
         //include javascript
 
-        olivia.println("<script src=\"olivia.js\"></script>");
+        olivia.println("<script src=\"" + jOlivia + "\"></script>");
         // olivia.println("<img src=\"funny pic.jpg\"><img>");
         htmltemplate.outputFooter(olivia);
 
