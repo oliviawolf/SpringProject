@@ -14,8 +14,8 @@ public class Homepage extends rani {
         outputHeader(tHome, home);
 
         //output css link
-        home.println(
-                "<link href=\"homepageStyle.css\" rel=\"stylesheet\" type=\"text/css\"></link>");
+        home.println("<link href=\"" + cHome
+                + "\" rel=\"stylesheet\" type=\"text/css\"></link>");
 
         //output header
         home.println("<h1>" + tHome + "</h1>");

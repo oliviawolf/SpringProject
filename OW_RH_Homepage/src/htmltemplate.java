@@ -20,8 +20,8 @@ public class htmltemplate {
             tRani = "Rani";
 
     //Output file names
-    public static String fHome = "WebContent/index.html",
-            fOlivia = "WebContent/olivia.html", fRani = "WebContent/rani.html";
+    public static String fHome = "index.html", fOlivia = "olivia.html",
+            fRani = "rani.html";
 
     public static String[] fileNames = { fHome, fOlivia, fRani };
     public static String[] siteTitles = { tHome, tOlivia, tRani };
@@ -34,26 +34,22 @@ public class htmltemplate {
     }
 
     //CSS files
-    public static String cHome = "WebContent/Homepage/homepageStyle.css",
-            cOlivia = "WebContent/Oliva/olivia_style.css",
-            cRani = "WebContent/Rani/rani_style.css";
+    public static String cHome = "Homepage/homepageStyle.css",
+            cOlivia = "Olivia/olivia_style.css", cRani = "Rani/rani_style.css";
 
     //Javascript files
-    public static String jHome = "WebContent/Homepage/homepagejs.js",
-            jOlivia = "WebContent/Olivia/olivia.js",
-            jRani = "WebContent/Rani/rani.js";
+    public static String jHome = "Homepage/homepagejs.js",
+            jOlivia = "Olivia/olivia.js", jRani = "Rani/rani.js";
 
     //Additional WebContent files
-    public static String song1 = "WebContent/Olivia/01 - Like A Star.mp3",
-            audio2 = "WebContent/Olivia/audio2.mp3",
-            audio3 = "WebContent/Olivia/audio3.mp3",
-            funnyPic = "WebContent/Olivia/funny pic.jpg",
+    public static String song1 = "01 - Like A Star.mp3", audio2 = "audio2.mp3",
+            audio3 = "audio3.mp3", funnyPic = "funny pic.jpg",
             raniText1File = "WebContent/Rani/rani_text1.txt";
 
     //Webpages, input and output files
-    public static SimpleWriter home = new SimpleWriter1L(fHome),
-            rani = new SimpleWriter1L(fRani),
-            olivia = new SimpleWriter1L(fOlivia);
+    public static SimpleWriter home = new SimpleWriter1L("WebContent/" + fHome),
+            rani = new SimpleWriter1L("WebContent/" + fRani),
+            olivia = new SimpleWriter1L("WebContent/" + fOlivia);
     public static SimpleReader raniText1 = new SimpleReader1L(raniText1File);
 
     /**

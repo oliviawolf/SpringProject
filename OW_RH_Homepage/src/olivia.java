@@ -23,8 +23,8 @@ public class olivia extends htmltemplate {
         olivia.println("<hr>");
 
         //add a song to page
-        olivia.println(
-                "<embed id=\"sound\" src=\"01 - Like A Star.mp3\" autostart=\"false\" width=\"0\" height=\"0\">");
+        olivia.println("<embed id=\"sound\" src=\"" + song1
+                + "\" autostart=\"false\" width=\"0\" height=\"0\">");
 
         olivia.println("<div class=\"tab\">");
 
@@ -56,7 +56,7 @@ public class olivia extends htmltemplate {
         olivia.println("<div id=\"Music\" class=\"tabcontent\">");
 
         olivia.println("<audio controls=\"controls\" id=\"audio_player\">");
-        olivia.println("<source src=\"audio2.mp3\" type=\"audio/mpeg\" />");
+        olivia.println("<source src=\"" + audio2 + "\" type=\"audio/mpeg\" />");
         olivia.println(
                 "Your browser does not support the audio element. \n </audio>");
         olivia.println("<p></p>");
@@ -65,7 +65,8 @@ public class olivia extends htmltemplate {
 
         createButton("pause", "pauseSong()", olivia);
 
-        createButton("play this instead", "chooseSong(\'audio3.mp3\')", olivia);
+        createButton("play this instead", "chooseSong(\'" + audio3 + "\')",
+                olivia);
 
         olivia.println("</div>");
         //create form to enter name
