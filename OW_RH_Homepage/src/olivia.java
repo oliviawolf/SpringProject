@@ -21,6 +21,8 @@ public class olivia extends htmltemplate {
         olivia.println("</div>");
         createTabs(tOlivia, olivia);
 
+        olivia.println("<hr>");
+
         //add a song to page
         olivia.println(
                 "<embed id=\"sound\" src=\"01 - Like A Star.mp3\" autostart=\"false\" width=\"0\" height=\"0\">");
