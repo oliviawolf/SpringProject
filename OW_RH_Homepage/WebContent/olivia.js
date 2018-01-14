@@ -1,7 +1,12 @@
 
-
+function upDate(){
+	var x= new Date();
+	var date = document.getElementById('date');
+	date.innerHTML = x.toUTCString();
+}
 
 var Button = document.getElementById('Hello There');
+
 
 Button.onclick = function(){
 	alert('You did it!!');
@@ -57,6 +62,7 @@ function playSong(){
 
 	song.play();
 }
+
 
 function pauseSong(){
 	var song=document.getElementById('sound');

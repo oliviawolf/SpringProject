@@ -12,7 +12,7 @@ body{
     padding: 20 0 20 0;
 }
 html{
-    background-color: #59BF3F;
+    background-color: #40892e;
     padding:10 40 10 40
 }
 
@@ -88,5 +88,12 @@ li a:hover:not(.active){
 }
 
 .active{
-    background-color:#4CAF50;
+    background-color:#40892e;
+}
+
+.date p{
+	 background-color: #c0c0c0;
+    color: #000000;
+    text-align: center;
+    
 }

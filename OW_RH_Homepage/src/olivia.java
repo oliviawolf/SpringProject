@@ -16,6 +16,9 @@ public class olivia extends htmltemplate {
 
         olivia.println("<h1>" + tOlivia + "</h1>");
 
+        olivia.println("<div class=\"date\">");
+        olivia.println("<p id=\"date\"></p>");
+        olivia.println("</div>");
         createTabs(tOlivia, olivia);
 
         //add a song to page
@@ -23,6 +26,7 @@ public class olivia extends htmltemplate {
                 "<embed id=\"sound\" src=\"01 - Like A Star.mp3\" autostart=\"false\" width=\"0\" height=\"0\">");
 
         olivia.println("<div class=\"tab\">");
+
         olivia.println(
                 "<button class=\"tablinks\" onclick =\"openPage(event,'Buttons')\"> Buttons </button>");
         olivia.println(
@@ -34,6 +38,8 @@ public class olivia extends htmltemplate {
         olivia.println(
                 "Click any of the buttons below to make some magic happen \n");
         olivia.println("<p></p>");
+
+        createButton("click to update date", "upDate()", olivia);
         createButton("click me", "myFunction()", olivia);
 
         createButton("NO, click me", "myFunction2()", olivia);
